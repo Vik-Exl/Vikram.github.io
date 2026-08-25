@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/organic-18bca2a2-9df5-4923-a2da-be2eb40620bb/styles.css" />
+<script src="_ds/organic-18bca2a2-9df5-4923-a2da-be2eb40620bb/_ds_bundle.js"></script>
+<script src="image-slot.js"></script>
+<script src="vb-admin.js"></script>
+<style>
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; text-wrap: pretty; overflow-x: clip; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); }
+a { color: var(--color-accent-700); text-decoration: none; }
+a:hover { color: var(--color-accent-800); }
+@media (max-width: 880px) {
+  [data-stack] { grid-template-columns: minmax(0, 1fr) !important; }
+}
+@media (max-width: 520px) {
+  .nav a:not(.btn) { display: none; }
+}
+</style>
+</helmet>
+
+<nav class="nav" style="padding-inline: max(clamp(20px, 5vw, 72px), calc((100% - 1100px) / 2 + clamp(20px, 5vw, 72px))); position: sticky; top: 0; z-index: 40; background: color-mix(in srgb, var(--color-bg) 92%, transparent); backdrop-filter: blur(8px)">
+  <a class="nav-brand" href="index.dc.html" data-cta="case nav: home" style="white-space: nowrap; color: inherit">Vikram Bhadoria</a>
+  <a href="index.dc.html#work" data-cta="case nav: all work" style="white-space: nowrap">All work</a>
+  <a href="index.dc.html#experience" data-cta="case nav: experience" style="white-space: nowrap">Experience</a>
+  <a class="btn btn-primary" href="mailto:vikram.bhadoria1995@gmail.com" data-cta="case nav: email me" style="white-space: nowrap">Email me</a>
+</nav>
+
+<div style="max-width: 1100px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 72px)">
+
+  <section style="position: relative; z-index: 0; padding: calc(2.5 * 28px) 0 calc(1.5 * 28px)">
+    <div style="position: absolute; right: 0; top: -220px; width: min(380px, 55vw); aspect-ratio: 1; border-radius: 50%; background: var(--color-accent-2-200); pointer-events: none; z-index: -1"></div>
+    <a href="index.dc.html#work" data-cta="case: back to work" style="display: inline-block; font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; margin: 0 0 calc(1.25 * 28px)">← Back to all work</a>
+    <p style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 14px">UK ecommerce client · EXL · 2024–present</p>
+    <h1 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(34px, 4.6vw, 58px); line-height: clamp(38px, 5vw, 64px); margin: 0 0 0 -0.028em; text-box: trim-both cap alphabetic">Making a number trustworthy</h1>
+    <p style="font-size: 17px; line-height: 28px; max-width: 56ch; margin: calc(1.25 * 28px - 1cap) 0 0; text-box: trim-both cap alphabetic">A data lineage and ownership framework across a tangled retail reporting stack. Escalations about which number was right fell 40%, and the weekly review moved on to strategy.</p>
+  </section>
+
+  <section style="padding: 0 0 calc(1.5 * 28px); display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 28px clamp(20px, 3vw, 40px)">
+    <div>
+      <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 62%, transparent); margin: 0 0 14px">My role</p>
+      <p style="font-size: 15.5px; line-height: 28px; margin: 0">Sr. Product Consultant: framework design, PRDs, stakeholder alignment</p>
+    </div>
+    <div>
+      <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 62%, transparent); margin: 0 0 14px">Timeline</p>
+      <p style="font-size: 15.5px; line-height: 28px; margin: 0">Aug 2024 – present</p>
+    </div>
+    <div>
+      <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 62%, transparent); margin: 0 0 14px">Team shape</p>
+      <p style="font-size: 15.5px; line-height: 28px; margin: 0">Client data platform team, 2 analysts, reporting leads across 3 functions</p>
+    </div>
+    <div>
+      <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 62%, transparent); margin: 0 0 14px">Status</p>
+      <p style="font-size: 15.5px; line-height: 28px; margin: 0">Live · client name withheld</p>
+    </div>
+  </section>
+
+  <figure class="washed" style="margin: 0 0 calc(2 * 28px); border-radius: calc(2 * var(--radius-lg)); overflow: hidden; background: var(--color-accent-2-100)">
+    <image-slot id="lineage-hero" shape="rect" placeholder="Drop the hero screenshot for this project" style="width: 100%; aspect-ratio: 16 / 9"></image-slot>
+  </figure>
+
+  <section style="padding: 0 0 calc(1.5 * 28px); display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px clamp(20px, 3vw, 32px)">
+    <div style="background: var(--color-accent-100); border-radius: calc(2 * var(--radius-lg)); padding: calc(1.25 * 28px) clamp(20px, 3vw, 28px)">
+      <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 40px; line-height: 48px; margin: 0; color: var(--color-accent-700); text-box: trim-both cap alphabetic">40%</p>
+      <p style="font-size: 13px; line-height: 20px; letter-spacing: 0.04em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 72%, transparent); margin: 14px 0 0">Fewer data escalations</p>
+    </div>
+    <div style="background: var(--color-accent-2-100); border-radius: calc(2 * var(--radius-lg)); padding: calc(1.25 * 28px) clamp(20px, 3vw, 28px)">
+      <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 40px; line-height: 48px; margin: 0; color: var(--color-accent-2-700); text-box: trim-both cap alphabetic">3</p>
+      <p style="font-size: 13px; line-height: 20px; letter-spacing: 0.04em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 72%, transparent); margin: 14px 0 0">Functions on one definition set</p>
+    </div>
+    <div style="background: var(--color-surface); border-radius: calc(2 * var(--radius-lg)); padding: calc(1.25 * 28px) clamp(20px, 3vw, 28px)">
+      <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 40px; line-height: 48px; margin: 0; color: var(--color-accent-700); text-box: trim-both cap alphabetic">0</p>
+      <p style="font-size: 13px; line-height: 20px; letter-spacing: 0.04em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 72%, transparent); margin: 14px 0 0">Unowned critical metrics left</p>
+    </div>
+  </section>
+
+  <section data-stack style="display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr); gap: calc(1.25 * 28px) clamp(24px, 4vw, 72px); padding: calc(1.5 * 28px) 0 calc(2 * 28px); align-items: start">
+
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 24px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">Context</h2>
+    <div>
+      <p style="font-size: 16px; line-height: 28px; max-width: 62ch; margin: 0; text-box: trim-both cap alphabetic">A UK ecommerce business where trading, marketing and finance each reported a different version of the same weekly number, and nobody could say which was canonical.</p>
+      <p style="font-size: 14px; line-height: 24px; color: var(--color-accent-700); background: var(--color-accent-100); border-radius: var(--radius-lg); padding: 12px 16px; margin: 14px 0 0; max-width: 62ch">To fill in: the business, its scale, why this landed on your desk, and who was watching.</p>
+    </div>
+
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 24px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">The problem</h2>
+    <div>
+      <p style="font-size: 16px; line-height: 28px; max-width: 62ch; margin: 0; text-box: trim-both cap alphabetic">This looked like a tooling problem and was actually a trust problem: no lineage, no owners, no shared definitions. Until the number was traceable, no dashboard would change a decision.</p>
+      <p style="font-size: 14px; line-height: 24px; color: var(--color-accent-700); background: var(--color-accent-100); border-radius: var(--radius-lg); padding: 12px 16px; margin: 14px 0 0; max-width: 62ch">To fill in: how you framed it, the user's words, the metric that hurt, the constraint you refused to accept.</p>
+    </div>
+
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 24px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">Discovery</h2>
+    <div>
+      <p style="font-size: 16px; line-height: 28px; max-width: 62ch; margin: 0; text-box: trim-both cap alphabetic">I traced the highest-traffic reports back to source, mapped every transformation on the way, and interviewed the people who quietly maintained the spreadsheets in between.</p>
+      <p style="font-size: 14px; line-height: 24px; color: var(--color-accent-700); background: var(--color-accent-100); border-radius: var(--radius-lg); padding: 12px 16px; margin: 14px 0 0; max-width: 62ch">To fill in: interviews, session counts, benchmarks, the query logs you read. Numbers make this section credible.</p>
+    </div>
+
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 24px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">Approach</h2>
+    <div>
+      <p style="font-size: 16px; line-height: 28px; max-width: 62ch; margin: 0; text-box: trim-both cap alphabetic">Lineage as a product surface, not documentation: definitions, owners and freshness visible where the number is consumed, plus an escalation path with an SLA attached.</p>
+      <div style="display: grid; gap: 14px; margin-top: 28px; max-width: 62ch">
+        <div style="display: flex; gap: 16px; align-items: flex-start">
+          <span style="flex: 0 0 auto; width: 14px; height: 14px; margin-top: 7px; border-radius: 50%; background: var(--color-accent)"></span>
+          <p style="font-size: 16px; line-height: 28px; margin: 0"><strong>Decision one.</strong> What you chose, what you gave up, and the reason you'd repeat it.</p>
+        </div>
+        <div style="display: flex; gap: 16px; align-items: flex-start">
+          <span style="flex: 0 0 auto; width: 14px; height: 14px; margin-top: 7px; border-radius: 50%; background: var(--color-accent)"></span>
+          <p style="font-size: 16px; line-height: 28px; margin: 0"><strong>Decision two.</strong> The trade-off a stakeholder disagreed with, and how it resolved.</p>
+        </div>
+        <div style="display: flex; gap: 16px; align-items: flex-start">
+          <span style="flex: 0 0 auto; width: 14px; height: 14px; margin-top: 7px; border-radius: 50%; background: var(--color-accent)"></span>
+          <p style="font-size: 16px; line-height: 28px; margin: 0"><strong>Decision three.</strong> The thing you cut to ship on time.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 24px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">Outcome</h2>
+    <div>
+      <p style="font-size: 16px; line-height: 28px; max-width: 62ch; margin: 0; text-box: trim-both cap alphabetic">Data-related escalations dropped 40% and stakeholder trust rose enough that the roadmap conversation shifted from validation to opportunity.</p>
+      <p style="font-size: 14px; line-height: 24px; color: var(--color-accent-700); background: var(--color-accent-100); border-radius: var(--radius-lg); padding: 12px 16px; margin: 14px 0 0; max-width: 62ch">To fill in: the measurement method as well as the result, baseline, window, and what you'd still watch.</p>
+    </div>
+
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 24px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">Tech &amp; tooling</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px">
+      <span class="tag tag-accent">BigQuery</span>
+      <span class="tag tag-accent-2">Power BI</span>
+      <span class="tag tag-outline">Data lineage</span>
+      <span class="tag tag-outline">ETL</span>
+      <span class="tag tag-outline">SQL</span>
+    </div>
+
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 24px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">Artefacts</h2>
+    <div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px">
+        <a href="#" data-cta="lineage: artefact prd" style="display: block; text-decoration: none; color: inherit; background: var(--color-surface); border-radius: calc(2 * var(--radius-lg)); padding: 20px; transition: transform 160ms ease, box-shadow 160ms ease" style-hover="transform: translateY(-3px); box-shadow: var(--shadow-md)">
+          <span style="display: block; width: 40px; height: 40px; border-radius: 50%; background: var(--color-accent-200); margin-bottom: 14px"></span>
+          <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 17px; line-height: 24px; margin: 0">PRD</p>
+          <p style="font-size: 13px; line-height: 20px; color: color-mix(in srgb, var(--color-text) 70%, transparent); margin: 6px 0 0">Link or upload the redacted spec</p>
+        </a>
+        <a href="#" data-cta="lineage: artefact metrics" style="display: block; text-decoration: none; color: inherit; background: var(--color-surface); border-radius: calc(2 * var(--radius-lg)); padding: 20px; transition: transform 160ms ease, box-shadow 160ms ease" style-hover="transform: translateY(-3px); box-shadow: var(--shadow-md)">
+          <span style="display: block; width: 40px; height: 40px; border-radius: 50%; background: var(--color-accent-2-200); margin-bottom: 14px"></span>
+          <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 17px; line-height: 24px; margin: 0">Metric definitions</p>
+          <p style="font-size: 13px; line-height: 20px; color: color-mix(in srgb, var(--color-text) 70%, transparent); margin: 6px 0 0">The sheet everyone argued over</p>
+        </a>
+        <a href="#" data-cta="lineage: artefact deck" style="display: block; text-decoration: none; color: inherit; background: var(--color-surface); border-radius: calc(2 * var(--radius-lg)); padding: 20px; transition: transform 160ms ease, box-shadow 160ms ease" style-hover="transform: translateY(-3px); box-shadow: var(--shadow-md)">
+          <span style="display: block; width: 40px; height: 40px; border-radius: 50%; background: var(--color-neutral-300); margin-bottom: 14px"></span>
+          <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 17px; line-height: 24px; margin: 0">Walkthrough deck</p>
+          <p style="font-size: 13px; line-height: 20px; color: color-mix(in srgb, var(--color-text) 70%, transparent); margin: 6px 0 0">Slides, demo video or Loom</p>
+        </a>
+      </div>
+      <p style="font-size: 14px; line-height: 24px; color: color-mix(in srgb, var(--color-text) 72%, transparent); background: var(--color-accent-2-100); border-radius: var(--radius-lg); padding: 14px 18px; margin: 14px 0 0">🔒 Some artefacts from this engagement are confidential. Share on request, ask me for the password-protected version.</p>
+    </div>
+  </section>
+
+  <section style="padding: 0 0 calc(2 * 28px)">
+    <div style="background: var(--color-accent-2-100); border-radius: calc(2 * var(--radius-lg)); padding: calc(1.5 * 28px) clamp(24px, 4vw, 56px)">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(24px, 2.6vw, 32px); line-height: calc(1.5 * 28px); margin: 0; text-box: trim-both cap alphabetic">Want the version with the numbers in it?</h2>
+      <p style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: calc(28px - 1cap) 0 0; max-width: 56ch; text-box: trim-both cap alphabetic">I'll walk you through the decisions, the dashboards and the things that didn't work, twenty minutes, no deck required.</p>
+      <div style="display: flex; gap: var(--space-3); flex-wrap: wrap; margin-top: 28px">
+        <a class="btn btn-primary" href="mailto:vikram.bhadoria1995@gmail.com?subject=Making a number trustworthy" data-cta="lineage: email me">Email me</a>
+        <a class="btn btn-ghost" href="index.dc.html#work" data-cta="lineage: see other projects">See the other projects</a>
+      </div>
+    </div>
+  </section>
+
+  <nav style="display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; padding: 0 0 calc(2.5 * 28px)">
+    <a href="project-nlq.dc.html" data-cta="lineage: previous project" style="max-width: 46%">
+      <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 62%, transparent); margin-bottom: 8px">← Previous</span>
+      <span style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; line-height: 28px">Ask the warehouse in English</span>
+    </a>
+    <a href="project-experimentation.dc.html" data-cta="lineage: next project" style="max-width: 46%; text-align: right">
+      <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 62%, transparent); margin-bottom: 8px">Next →</span>
+      <span style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; line-height: 28px">An experimentation engine people believe</span>
+    </a>
+  </nav>
+
+</div>
+
+<sc-if value="{{ adminMode }}" hint-placeholder-val="{{ false }}">
+<div data-no-edit="true" style="position: fixed; left: clamp(12px, 3vw, 28px); bottom: clamp(12px, 3vw, 28px); z-index: 61; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; font-family: var(--font-body)">
+  <sc-if value="{{ panelOpen }}" hint-placeholder-val="{{ false }}">
+  <div style="width: min(300px, calc(100vw - 32px)); background: var(--color-neutral-100); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); padding: 18px 20px">
+  <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 12px">Admin · {{ editLabel }}</p>
+  <p style="font-size: 14px; line-height: 20px; color: color-mix(in srgb, var(--color-text) 74%, transparent); margin: 0 0 14px">{{ editHint }}</p>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px">
+    <button type="button" class="btn btn-primary" onClick="{{ toggleEditing }}" data-cta-ignore="true" style="min-height: 34px; font-size: 13px">{{ editButton }}</button>
+    <button type="button" class="btn btn-secondary" onClick="{{ saveEdits }}" data-cta-ignore="true" style="min-height: 34px; font-size: 13px">Save</button>
+    <button type="button" class="btn btn-ghost" onClick="{{ publishEdits }}" data-cta-ignore="true" style="min-height: 34px; font-size: 13px">Publish file</button>
+  </div>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px">
+    <button type="button" class="btn btn-ghost" onClick="{{ resetEdits }}" data-cta-ignore="true" style="min-height: 30px; font-size: 13px">Discard all edits</button>
+    <button type="button" class="btn btn-ghost" onClick="{{ previewVisitor }}" data-cta-ignore="true" style="min-height: 30px; font-size: 13px">Preview as visitor</button>
+    <button type="button" class="btn btn-ghost" onClick="{{ exitAdmin }}" data-cta-ignore="true" style="min-height: 30px; font-size: 13px">Sign out</button>
+  </div>
+  <p style="font-size: 13px; line-height: 18px; color: color-mix(in srgb, var(--color-text) 60%, transparent); margin: 12px 0 0">⌘/Ctrl + Shift + E hides this panel entirely.</p>
+  </div>
+  </sc-if>
+  <button type="button" class="btn btn-secondary" onClick="{{ togglePanel }}" data-cta-ignore="true" style="min-height: 34px; font-size: 13px; box-shadow: var(--shadow-md)">{{ panelToggleLabel }}</button>
+</div>
+</sc-if>
+
+<sc-if value="{{ adminMode }}" hint-placeholder-val="{{ false }}">
+<div data-no-edit="true" style="position: fixed; right: clamp(12px, 3vw, 28px); bottom: clamp(12px, 3vw, 28px); z-index: 60; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; font-family: var(--font-body)">
+  <sc-if value="{{ logOpen }}" hint-placeholder-val="{{ false }}">
+  <div style="width: min(320px, calc(100vw - 32px)); max-height: 46vh; overflow: auto; background: var(--color-neutral-100); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); padding: 18px 20px">
+    <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 14px">CTA click log</p>
+    <sc-if value="{{ noClicks }}" hint-placeholder-val="{{ false }}">
+    <p style="font-size: 14px; line-height: 20px; color: color-mix(in srgb, var(--color-text) 70%, transparent); margin: 0">Nothing clicked yet.</p>
+    </sc-if>
+    <sc-if value="{{ hasClicks }}" hint-placeholder-val="{{ true }}">
+    <div style="display: grid; gap: 8px">
+      <sc-for list="{{ entries }}" as="row" hint-placeholder-count="3">
+        <div style="display: flex; justify-content: space-between; gap: 12px; align-items: baseline; font-size: 14px; line-height: 20px">
+          <span style="color: color-mix(in srgb, var(--color-text) 80%, transparent)">{{ row.label }}</span>
+          <span style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); color: var(--color-accent-700)">{{ row.count }}</span>
+        </div>
+      </sc-for>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--color-neutral-300)">
+      <span style="font-size: 14px; color: color-mix(in srgb, var(--color-text) 70%, transparent)">{{ total }} clicks this browser</span>
+      <button type="button" class="btn btn-ghost" onClick="{{ resetLog }}" style="min-height: 30px; font-size: 13px">Reset</button>
+    </div>
+    </sc-if>
+  </div>
+  </sc-if>
+  <button type="button" class="btn btn-primary" onClick="{{ toggleLog }}" style="box-shadow: var(--shadow-md)">Click log · {{ total }}</button>
+</div>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const KEY = 'vb-portfolio-cta-log';
+
+class Component extends DCLogic {
+  state = { counts: {}, logOpen: false, admin: false, editing: false, saved: false, panelOpen: false };
+
+  componentDidMount() {
+    const A = window.VBAdmin;
+    if (A) {
+      this.setState({ admin: A.panelVisible() });
+      this._onEditChange = () => {
+        const V = window.VBAdmin;
+        if (V) this.setState({ admin: V.panelVisible(), editing: V.editing(), dirty: V.dirty(), edits: V.count() });
+      };
+      document.addEventListener('vb-edit-change', this._onEditChange);
+      A.init(this._onEditChange);
+    }
+    try {
+      const raw = localStorage.getItem(KEY);
+      if (raw) this.setState({ counts: JSON.parse(raw) || {} });
+    } catch (e) {}
+    this._onClick = (e) => {
+      const el = e.target && e.target.closest ? e.target.closest('[data-cta]') : null;
+      if (!el) return;
+      const label = el.getAttribute('data-cta');
+      const href = el.getAttribute('href') || '';
+      if (el.target === '_blank' && /^https?:/i.test(href)) {
+        e.preventDefault();
+        const w = window.open(href, '_blank', 'noopener,noreferrer');
+        if (!w) { try { window.top.location.href = href; } catch (err) { location.href = href; } }
+      }
+      this.setState((s) => {
+        const counts = { ...s.counts, [label]: (s.counts[label] || 0) + 1 };
+        try { localStorage.setItem(KEY, JSON.stringify(counts)); } catch (err) {}
+        return { counts };
+      });
+    };
+    document.addEventListener('click', this._onClick, true);
+  }
+
+  componentWillUnmount() {
+    if (this._onClick) document.removeEventListener('click', this._onClick, true);
+    if (this._onEditChange) document.removeEventListener('vb-edit-change', this._onEditChange);
+  }
+
+  componentDidUpdate() {
+    if (window.VBAdmin) window.VBAdmin.apply();
+  }
+
+  renderVals() {
+    const counts = this.state.counts || {};
+    const entries = Object.keys(counts)
+      .map((label) => ({ label, count: counts[label] }))
+      .sort((a, b) => b.count - a.count);
+    return {
+      entries,
+      total: entries.reduce((n, e) => n + e.count, 0),
+      hasClicks: entries.length > 0,
+      noClicks: entries.length === 0,
+      adminMode: this.state.admin,
+      panelOpen: this.state.panelOpen,
+      panelToggleLabel: this.state.panelOpen ? 'Hide admin' : (this.state.editing ? 'Admin · editing' : 'Admin'),
+      togglePanel: () => this.setState((s) => ({ panelOpen: !s.panelOpen })),
+      editLabel: this.state.editing ? 'editing · ' + (this.state.dirty ? 'unsaved' : 'saved') : 'content locked',
+      editButton: this.state.editing ? 'Stop editing' : 'Edit content',
+      editHint: this.state.editing
+        ? 'Click any text and type. Save keeps it in this browser; Publish file downloads content.json to commit.'
+        : 'Visitors see none of this — no panel, no click log, no editable text. Turn on editing to change any text.',
+      toggleEditing: () => { window.VBAdmin && window.VBAdmin.toggleEditing(); },
+      saveEdits: () => { window.VBAdmin && window.VBAdmin.save(); },
+      publishEdits: () => { window.VBAdmin && window.VBAdmin.download(); },
+      resetEdits: () => { window.VBAdmin && window.VBAdmin.reset(); },
+      previewVisitor: () => { window.VBAdmin && window.VBAdmin.previewVisitor(); },
+      exitAdmin: () => { window.VBAdmin && window.VBAdmin.exitAdmin(); },
+      logOpen: this.state.logOpen,
+      toggleLog: () => this.setState((s) => ({ logOpen: !s.logOpen })),
+      resetLog: () => {
+        try { localStorage.removeItem(KEY); } catch (e) {}
+        this.setState({ counts: {} });
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

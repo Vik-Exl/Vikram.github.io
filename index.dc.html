@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/organic-18bca2a2-9df5-4923-a2da-be2eb40620bb/styles.css" />
+<script src="_ds/organic-18bca2a2-9df5-4923-a2da-be2eb40620bb/_ds_bundle.js"></script>
+<script src="image-slot.js"></script>
+<script src="vb-admin.js"></script>
+<style>
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; text-wrap: pretty; overflow-x: clip; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); }
+a { color: var(--color-accent-700); text-decoration: none; }
+a:hover { color: var(--color-accent-800); }
+@media (max-width: 880px) {
+  [data-stack] { grid-template-columns: minmax(0, 1fr) !important; }
+}
+@media (max-width: 520px) {
+  .nav a:not(.btn) { display: none; }
+}
+@keyframes vbRise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+</style>
+</helmet>
+
+<nav class="nav" style="padding-inline: max(clamp(20px, 5vw, 72px), calc((100% - 1200px) / 2 + clamp(20px, 5vw, 72px))); position: sticky; top: 0; z-index: 40; background: color-mix(in srgb, var(--color-bg) 92%, transparent); backdrop-filter: blur(8px)">
+  <span class="nav-brand" style="white-space: nowrap">Vikram Bhadoria</span>
+  <a href="#work" data-cta="nav: work" style="white-space: nowrap">Work</a>
+  <a href="#experience" data-cta="nav: experience" style="white-space: nowrap">Experience</a>
+  <a href="#how" data-cta="nav: how i work" style="white-space: nowrap">How I work</a>
+  <a href="#contact" data-cta="nav: contact" style="white-space: nowrap">Contact</a>
+  <a class="btn btn-primary" href="mailto:vikram.bhadoria1995@gmail.com" data-cta="nav: email me" style="white-space: nowrap">Email me</a>
+</nav>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 72px)">
+
+  <section style="position: relative; z-index: 0; padding: calc(3.5 * 28px) 0 calc(3 * 28px)">
+    <div style="position: absolute; right: 0; top: -200px; width: min(420px, 60vw); aspect-ratio: 1; border-radius: 50%; background: var(--color-accent-2-200); pointer-events: none; z-index: -1"></div>
+    <h1 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(40px, 5.8vw, 76px); line-height: clamp(43px, 6.26vw, 82px); letter-spacing: 0; margin: 0 0 0 -0.028em; text-box: trim-both cap alphabetic">
+      <span style="display: block">Dashboards are cheap.</span>
+      <span style="display: block; color: var(--color-accent-700)">Decisions are the product.</span>
+    </h1>
+    <p style="font-size: 17px; line-height: 28px; max-width: 58ch; margin: calc(1.5 * 28px - 1cap) 0 0; text-box: trim-both cap alphabetic">I'm an analytics-first product manager, seven years spent between the query engine and the person staring at the chart. I've shipped an NLQ engine on GPT-4, a data-lineage framework a UK ecommerce business now trusts its numbers to, and an analytics platform relaunched end to end. Currently a Sr. Product Consultant at EXL, Gurugram.</p>
+    <div style="display: flex; gap: var(--space-3); flex-wrap: wrap; margin-top: 28px">
+      <a class="btn btn-primary" href="#work" data-cta="hero: see the work">See the work</a>
+      <a class="btn btn-ghost" href="uploads/Vikram PM-1.pdf" download="Vikram-Bhadoria-CV.pdf" data-cta="hero: download cv">Download the CV</a>
+    </div>
+    <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: calc(2 * 28px) 0 0">Six case studies · <a href="https://www.linkedin.com/in/vikram-singh-bhadoria-17a15912a/" target="_blank" rel="noopener noreferrer" data-cta="hero: linkedin" style="color: inherit; text-decoration: underline; text-underline-offset: 3px">LinkedIn</a></p>
+  </section>
+
+  <section aria-label="Impact, in numbers" style="position: relative; padding: calc(1.5 * 28px) 0 calc(2.5 * 28px); display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 28px 14px; justify-items: center">
+    <div style="border-radius: 50%; aspect-ratio: 1; width: min(240px, 100%); display: grid; place-content: center; text-align: center; padding: 28px; box-sizing: border-box; background: var(--color-accent-100)">
+      <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(34px, 3.4vw, 48px); line-height: 56px; margin: 0; color: var(--color-accent-700); text-box: trim-both cap alphabetic">40%</p>
+      <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 70%, transparent); margin: 14px 0 0; max-width: 17ch; text-wrap: balance">Fewer data escalations</p>
+    </div>
+    <div style="border-radius: 50%; aspect-ratio: 1; width: min(240px, 100%); display: grid; place-content: center; text-align: center; padding: 28px; box-sizing: border-box; background: var(--color-accent-200)">
+      <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(34px, 3.4vw, 48px); line-height: 56px; margin: 0; color: var(--color-accent-700); text-box: trim-both cap alphabetic">60%</p>
+      <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 70%, transparent); margin: 14px 0 0; max-width: 17ch; text-wrap: balance">Faster time to an answer</p>
+    </div>
+    <div style="border-radius: 50%; aspect-ratio: 1; width: min(280px, 100%); display: grid; place-content: center; text-align: center; padding: 28px; box-sizing: border-box; background: var(--color-accent-2-300)">
+      <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(34px, 3.4vw, 48px); line-height: 56px; margin: 0; color: var(--color-accent-2-800); text-box: trim-both cap alphabetic">120K</p>
+      <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 70%, transparent); margin: 14px 0 0; max-width: 17ch; text-wrap: balance">MAU served by my dashboards</p>
+    </div>
+    <div style="border-radius: 50%; aspect-ratio: 1; width: min(200px, 100%); display: grid; place-content: center; text-align: center; padding: 28px; box-sizing: border-box; background: var(--color-accent-2-100)">
+      <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(34px, 3.4vw, 48px); line-height: 56px; margin: 0; color: var(--color-accent-2-700); text-box: trim-both cap alphabetic">+10</p>
+      <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 70%, transparent); margin: 14px 0 0; max-width: 17ch; text-wrap: balance">NPS after relaunch</p>
+    </div>
+  </section>
+
+  <section id="work" style="padding: calc(2.5 * 28px) 0 calc(2 * 28px)">
+    <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 14px">Selected work</span>
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.4vw, 44px); line-height: calc(1.5 * 28px); margin: 0 0 0 -0.028em; text-box: trim-both cap alphabetic">Six products, opened up</h2>
+    <p style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); max-width: 52ch; margin: calc(28px - 1cap) 0 calc(1.5 * 28px); text-box: trim-both cap alphabetic">Every tile opens a case study: the problem as it actually arrived, the decisions I'd defend, and the number it moved. Click one, I've left the ugly parts in.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 28px clamp(24px, 3vw, 40px)">
+      <a href="project-nlq.dc.html" data-cta="tile: nlq engine" style="display: block; text-decoration: none; color: inherit; background: var(--color-surface, #fffaf1); border-radius: calc(2 * var(--radius-lg)); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform 180ms ease, box-shadow 180ms ease" style-hover="transform: translateY(-4px); box-shadow: var(--shadow-lg)">
+        <div class="washed" style="width: 100%; aspect-ratio: 16 / 10; background: var(--color-accent-2-100)">
+          <image-slot id="tile-nlq" shape="rect" placeholder="Drop the NLQ module screenshot" style="width: 100%; height: 100%"></image-slot>
+        </div>
+        <div style="padding: 28px clamp(20px, 3vw, 32px) calc(1.25 * 28px)">
+          <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 14px">Lumenore · 2023–24 · Live</span>
+          <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 26px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">Ask the warehouse in English</h3>
+          <p style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 14px 0 0; text-box: trim-both cap alphabetic">A GPT-4 natural-language query layer over a semantic model, so a category manager stops filing tickets for a chart. Query efficiency up 60%.</p>
+          <span style="display: inline-block; margin-top: 14px; font-weight: 600; color: var(--color-accent-700)">Read the case study →</span>
+        </div>
+      </a>
+
+      <a href="project-lineage.dc.html" data-cta="tile: data lineage" style="display: block; text-decoration: none; color: inherit; background: var(--color-surface, #fffaf1); border-radius: calc(2 * var(--radius-lg)); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform 180ms ease, box-shadow 180ms ease" style-hover="transform: translateY(-4px); box-shadow: var(--shadow-lg)">
+        <div class="washed" style="width: 100%; aspect-ratio: 16 / 10; background: var(--color-accent-100)">
+          <image-slot id="tile-lineage" shape="rect" placeholder="Drop a lineage-graph screenshot" style="width: 100%; height: 100%"></image-slot>
+        </div>
+        <div style="padding: 28px clamp(20px, 3vw, 32px) calc(1.25 * 28px)">
+          <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 14px">UK ecommerce client · EXL · Current</span>
+          <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 26px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">Making a number trustworthy</h3>
+          <p style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 14px 0 0; text-box: trim-both cap alphabetic">A lineage and ownership framework across a tangled retail stack. Escalations about "which number is right" fell 40%, the arguments moved on to strategy.</p>
+          <span style="display: inline-block; margin-top: 14px; font-weight: 600; color: var(--color-accent-700)">Read the case study →</span>
+        </div>
+      </a>
+    </div>
+
+    <div style="display: grid; gap: 14px; margin-top: calc(1.5 * 28px)">
+      <a href="project-experimentation.dc.html" data-cta="row: experimentation engine" data-stack style="display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr) auto; gap: 14px clamp(16px, 3vw, 40px); align-items: center; text-decoration: none; color: inherit; padding: calc(1.25 * 28px) clamp(20px, 3vw, 32px); border-radius: calc(2 * var(--radius-lg)); background: color-mix(in srgb, var(--color-accent-100) 55%, transparent); transition: background 160ms ease, transform 160ms ease" style-hover="background: var(--color-accent-100); transform: translateX(6px)">
+        <div>
+          <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 14px">EXL · Current</span>
+          <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">An experimentation engine people believe</h3>
+        </div>
+        <p style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 0; text-box: trim-both cap alphabetic">Hypothesis intake, power calculations, significance reports, a habit, not a heroic quarter. +15% conversion.</p>
+        <span style="font-weight: 600; color: var(--color-accent-700); white-space: nowrap">Open →</span>
+      </a>
+
+      <a href="project-relaunch.dc.html" data-cta="row: platform relaunch" data-stack style="display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr) auto; gap: 14px clamp(16px, 3vw, 40px); align-items: center; text-decoration: none; color: inherit; padding: calc(1.25 * 28px) clamp(20px, 3vw, 32px); border-radius: calc(2 * var(--radius-lg)); background: color-mix(in srgb, var(--color-accent-2-100) 60%, transparent); transition: background 160ms ease, transform 160ms ease" style-hover="background: var(--color-accent-2-100); transform: translateX(6px)">
+        <div>
+          <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 14px">Lumenore · 2023–24 · End to end</span>
+          <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">Relaunching an analytics platform</h3>
+        </div>
+        <p style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 0; text-box: trim-both cap alphabetic">Discovery to GA on a product that had lost its argument. Job fulfilment +40%, NPS +10 points.</p>
+        <span style="font-weight: 600; color: var(--color-accent-700); white-space: nowrap">Open →</span>
+      </a>
+
+      <a href="project-funnels.dc.html" data-cta="row: funnel and event tracking" data-stack style="display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr) auto; gap: 14px clamp(16px, 3vw, 40px); align-items: center; text-decoration: none; color: inherit; padding: calc(1.25 * 28px) clamp(20px, 3vw, 32px); border-radius: calc(2 * var(--radius-lg)); background: color-mix(in srgb, var(--color-accent-100) 55%, transparent); transition: background 160ms ease, transform 160ms ease" style-hover="background: var(--color-accent-100); transform: translateX(6px)">
+        <div>
+          <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 14px">Fanspace · 2022–23</span>
+          <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">Finding the leak in the funnel</h3>
+        </div>
+        <p style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 0; text-box: trim-both cap alphabetic">An event taxonomy rebuilt in CleverTap and Mixpanel until drop-off had a name. Drop-off down 10%, adoption up 20%.</p>
+        <span style="font-weight: 600; color: var(--color-accent-700); white-space: nowrap">Open →</span>
+      </a>
+
+      <a href="project-teardown.dc.html" data-cta="row: competitive teardown" data-stack style="display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr) auto; gap: 14px clamp(16px, 3vw, 40px); align-items: center; text-decoration: none; color: inherit; padding: calc(1.25 * 28px) clamp(20px, 3vw, 32px); border-radius: calc(2 * var(--radius-lg)); background: color-mix(in srgb, var(--color-accent-2-100) 60%, transparent); transition: background 160ms ease, transform 160ms ease" style-hover="background: var(--color-accent-2-100); transform: translateX(6px)">
+        <div>
+          <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 14px">Teardown · 2023</span>
+          <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">Tableau, ThoughtSpot, DOMO: where they hurt</h3>
+        </div>
+        <p style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 0; text-box: trim-both cap alphabetic">A feature-by-feature benchmark of visualisation and modelling depth, and the three gaps we chose to attack.</p>
+        <span style="font-weight: 600; color: var(--color-accent-700); white-space: nowrap">Open →</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="experience" style="padding: calc(2.5 * 28px) 0 calc(2 * 28px)">
+    <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 14px">Experience</span>
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.4vw, 44px); line-height: calc(1.5 * 28px); margin: 0 0 calc(1.5 * 28px) -0.028em; text-box: trim-both cap alphabetic">Analyst first. That's the point.</h2>
+
+    <div style="display: grid; gap: calc(1.25 * 28px)">
+      <div data-stack style="display: grid; grid-template-columns: minmax(0, 200px) minmax(0, 1fr); gap: 14px clamp(24px, 4vw, 64px); align-items: baseline; padding-bottom: calc(1.25 * 28px); border-bottom: 1px solid var(--color-accent-2-200)">
+        <div>
+          <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">EXL Services</p>
+          <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 62%, transparent); margin: 14px 0 0">Aug 2024, Present · Gurugram</p>
+        </div>
+        <div>
+          <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; line-height: 28px; margin: 0; color: var(--color-accent-700); text-box: trim-both cap alphabetic">Sr. Product Consultant, Analytics &amp; Ecommerce</p>
+          <p style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 14px 0 0; max-width: 62ch; text-box: trim-both cap alphabetic">Embedded with a UK ecommerce business. Built the lineage and ownership framework their reporting now runs on (escalations −40%), ran the experimentation programme behind a 15% conversion uplift, and wrote the PRDs and significance reports that decided the roadmap.</p>
+        </div>
+      </div>
+
+      <div data-stack style="display: grid; grid-template-columns: minmax(0, 200px) minmax(0, 1fr); gap: 14px clamp(24px, 4vw, 64px); align-items: baseline; padding-bottom: calc(1.25 * 28px); border-bottom: 1px solid var(--color-accent-2-200)">
+        <div>
+          <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">Netlink (Lumenore)</p>
+          <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 62%, transparent); margin: 14px 0 0">Mar 2023, Jul 2024 · Bhopal</p>
+        </div>
+        <div>
+          <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; line-height: 28px; margin: 0; color: var(--color-accent-700); text-box: trim-both cap alphabetic">Product Manager, Data Analytics Platform</p>
+          <p style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 14px 0 0; max-width: 62ch; text-box: trim-both cap alphabetic">Owned the NLQ module on GPT-4 and the end-to-end relaunch of the platform: benchmarking against Tableau, DOMO and ThoughtSpot, then choosing what not to build. Fulfilment +40%, NPS +10, query efficiency +60%.</p>
+        </div>
+      </div>
+
+      <div data-stack style="display: grid; grid-template-columns: minmax(0, 200px) minmax(0, 1fr); gap: 14px clamp(24px, 4vw, 64px); align-items: baseline; padding-bottom: calc(1.25 * 28px); border-bottom: 1px solid var(--color-accent-2-200)">
+        <div>
+          <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">Fanspace (Fanclash)</p>
+          <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 62%, transparent); margin: 14px 0 0">Apr 2022, Mar 2023 · Gurugram</p>
+        </div>
+        <div>
+          <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; line-height: 28px; margin: 0; color: var(--color-accent-700); text-box: trim-both cap alphabetic">Associate Manager, Product Analytics</p>
+          <p style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 14px 0 0; max-width: 62ch; text-box: trim-both cap alphabetic">Executive and operational dashboards for 120K MAU, plus the event tracking and funnel work that took drop-off down 10% and feature adoption up 20%.</p>
+        </div>
+      </div>
+
+      <div data-stack style="display: grid; grid-template-columns: minmax(0, 200px) minmax(0, 1fr); gap: 14px clamp(24px, 4vw, 64px); align-items: baseline; padding-bottom: calc(1.25 * 28px); border-bottom: 1px solid var(--color-accent-2-200)">
+        <div>
+          <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">Innowatts Energy</p>
+          <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 62%, transparent); margin: 14px 0 0">Jun 2021, Apr 2022 · Gurugram</p>
+        </div>
+        <div>
+          <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; line-height: 28px; margin: 0; color: var(--color-accent-700); text-box: trim-both cap alphabetic">Data Analyst</p>
+          <p style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 14px 0 0; max-width: 62ch; text-box: trim-both cap alphabetic">Neural-network load forecasting (+15% accuracy) and the SQL/Python plumbing under it (−10% processing time). This is where I learned that a model nobody trusts is a model nobody uses.</p>
+        </div>
+      </div>
+
+      <div data-stack style="display: grid; grid-template-columns: minmax(0, 200px) minmax(0, 1fr); gap: 14px clamp(24px, 4vw, 64px); align-items: baseline">
+        <div>
+          <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">HCL Technologies</p>
+          <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 62%, transparent); margin: 14px 0 0">Jul 2018, Aug 2019 · Noida</p>
+        </div>
+        <div>
+          <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; line-height: 28px; margin: 0; color: var(--color-accent-700); text-box: trim-both cap alphabetic">Data Analyst</p>
+          <p style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 14px 0 0; max-width: 62ch; text-box: trim-both cap alphabetic">Production SQL optimisation, 25% off execution time. M.Tech Nano-Electronics at NIT Kurukshetra (8.8 CGPA) came in between.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" style="padding: calc(2.5 * 28px) 0 calc(2 * 28px)">
+    <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 14px">How I work</span>
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px, 3.4vw, 44px); line-height: calc(1.5 * 28px); margin: 0 0 calc(1.5 * 28px) -0.028em; text-box: trim-both cap alphabetic">Four opinions I'll defend</h2>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: calc(1.25 * 28px) clamp(24px, 4vw, 72px)">
+      <div style="display: flex; gap: 20px; align-items: flex-start">
+        <span style="flex: 0 0 auto; width: 18px; height: 18px; margin-top: 6px; border-radius: 50%; background: var(--color-accent)"></span>
+        <div>
+          <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 24px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">Trust before features</h3>
+          <p style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 14px 0 0; max-width: 46ch; text-box: trim-both cap alphabetic">Nobody adopts an insight they can't source. Lineage, definitions and owners are product work, not a data-team chore, and they buy you the right to ship the interesting things.</p>
+        </div>
+      </div>
+      <div style="display: flex; gap: 20px; align-items: flex-start">
+        <span style="flex: 0 0 auto; width: 18px; height: 18px; margin-top: 6px; border-radius: 50%; background: var(--color-accent)"></span>
+        <div>
+          <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 24px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">I read the query plan</h3>
+          <p style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 14px 0 0; max-width: 46ch; text-box: trim-both cap alphabetic">Most "UX problems" in analytics are a slow join wearing a costume. Being able to sit with the engineer in the semantic layer changes what the roadmap can promise.</p>
+        </div>
+      </div>
+      <div style="display: flex; gap: 20px; align-items: flex-start">
+        <span style="flex: 0 0 auto; width: 18px; height: 18px; margin-top: 6px; border-radius: 50%; background: var(--color-accent)"></span>
+        <div>
+          <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 24px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">A test, or an opinion</h3>
+          <p style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 14px 0 0; max-width: 46ch; text-box: trim-both cap alphabetic">Every bet gets a hypothesis, a metric and a stopping rule written down before launch. Half of mine have been wrong; that's the return on the process, not a failure of it.</p>
+        </div>
+      </div>
+      <div style="display: flex; gap: 20px; align-items: flex-start">
+        <span style="flex: 0 0 auto; width: 18px; height: 18px; margin-top: 6px; border-radius: 50%; background: var(--color-accent)"></span>
+        <div>
+          <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 24px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">Consulting is scoping</h3>
+          <p style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 14px 0 0; max-width: 46ch; text-box: trim-both cap alphabetic">As a consultant you get one shot at the real problem. I spend the first two weeks on the question and its owner, then move fast, because by then the fast direction is the right one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 28px clamp(24px, 5vw, 96px); align-items: center; padding: calc(2 * 28px) 0 calc(3 * 28px)">
+    <div>
+      <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 14px">The person behind it</span>
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(26px, 2.8vw, 34px); line-height: calc(1.5 * 28px); margin: 0 0 0 -0.028em; text-box: trim-both cap alphabetic">Electronics engineer, accidental analyst, deliberate PM</h2>
+      <p style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: calc(28px - 1cap) 0 0; max-width: 50ch; text-box: trim-both cap alphabetic">I started in nano-electronics at NIT Kurukshetra, fell into SQL at HCL, and found that I liked the argument about the number more than the number. Seven years later I've done the analyst's job, the platform PM's job and the consultant's job on the same class of problem, which is why I can tell in a week whether a data product has a tooling problem or a trust problem. Based in Gurugram, working with a UK team.</p>
+      <div style="display: flex; gap: var(--space-3); flex-wrap: wrap; margin-top: 28px">
+        <a class="btn btn-secondary" href="uploads/Vikram PM-1.pdf" download="Vikram-Bhadoria-CV.pdf" data-cta="about: download cv">Download the CV</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/vikram-singh-bhadoria-17a15912a/" target="_blank" rel="noopener noreferrer" data-cta="about: linkedin">LinkedIn</a>
+      </div>
+    </div>
+    <figure class="washed" style="margin: 0; width: min(400px, 100%); justify-self: end; border-radius: calc(2 * var(--radius-lg)); overflow: hidden; background: var(--color-accent-2-100)">
+      <image-slot id="portrait" shape="rect" placeholder="Drop your headshot here" style="width: 100%; aspect-ratio: 4 / 5"></image-slot>
+    </figure>
+  </section>
+
+  <section style="padding: 0 0 calc(2.5 * 28px)">
+    <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 14px">Toolkit</span>
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(26px, 2.8vw, 34px); line-height: calc(1.5 * 28px); margin: 0 0 calc(1.25 * 28px) -0.028em; text-box: trim-both cap alphabetic">What I use, and how deep</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px clamp(24px, 4vw, 56px)">
+      <div>
+        <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 62%, transparent); margin: 0 0 14px">BI &amp; visualisation</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px">
+          <span class="tag tag-accent">Power BI</span>
+          <span class="tag tag-accent">Tableau</span>
+          <span class="tag tag-outline">Looker Studio</span>
+          <span class="tag tag-outline">Metabase</span>
+          <span class="tag tag-outline">Redash</span>
+        </div>
+      </div>
+      <div>
+        <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 62%, transparent); margin: 0 0 14px">Data &amp; modelling</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px">
+          <span class="tag tag-accent-2">SQL / PostgreSQL</span>
+          <span class="tag tag-accent-2">BigQuery</span>
+          <span class="tag tag-outline">Python</span>
+          <span class="tag tag-outline">Semantic layers</span>
+          <span class="tag tag-outline">ETL &amp; lineage</span>
+          <span class="tag tag-outline">R</span>
+        </div>
+      </div>
+      <div>
+        <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 62%, transparent); margin: 0 0 14px">Product craft</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px">
+          <span class="tag tag-accent">PRDs &amp; specs</span>
+          <span class="tag tag-outline">A/B testing</span>
+          <span class="tag tag-outline">Funnel analysis</span>
+          <span class="tag tag-outline">Jira / Confluence</span>
+          <span class="tag tag-outline">Pendo</span>
+          <span class="tag tag-outline">CleverTap</span>
+          <span class="tag tag-outline">Mixpanel</span>
+          <span class="tag tag-outline">GPT-4 integration</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <sc-if value="{{ showWriting }}" hint-placeholder-val="{{ true }}">
+  <section id="writing" style="padding: 0 0 calc(2.5 * 28px)">
+    <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 14px">Writing &amp; teardowns</span>
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(26px, 2.8vw, 34px); line-height: calc(1.5 * 28px); margin: 0 0 calc(1.25 * 28px) -0.028em; text-box: trim-both cap alphabetic">Notes I keep meaning to publish</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px clamp(20px, 3vw, 32px)">
+      <a href="#writing" data-cta="writing: nlq honesty" style="display: block; text-decoration: none; color: inherit; padding: calc(1.25 * 28px) clamp(20px, 3vw, 28px); border-radius: calc(2 * var(--radius-lg)); background: var(--color-surface); transition: transform 160ms ease, box-shadow 160ms ease" style-hover="transform: translateY(-3px); box-shadow: var(--shadow-md)">
+        <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 14px">Essay · draft</span>
+        <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">Natural language is not a feature</h3>
+        <p style="font-size: 15px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 14px 0 0; text-box: trim-both cap alphabetic">Why an NLQ box fails without a semantic layer underneath, and what we shipped instead.</p>
+        <span style="display: inline-block; margin-top: 14px; font-weight: 600; color: var(--color-accent-700)">Add the link →</span>
+      </a>
+      <a href="#writing" data-cta="writing: dashboard graveyard" style="display: block; text-decoration: none; color: inherit; padding: calc(1.25 * 28px) clamp(20px, 3vw, 28px); border-radius: calc(2 * var(--radius-lg)); background: var(--color-surface); transition: transform 160ms ease, box-shadow 160ms ease" style-hover="transform: translateY(-3px); box-shadow: var(--shadow-md)">
+        <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 14px">Teardown · draft</span>
+        <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">The dashboard graveyard</h3>
+        <p style="font-size: 15px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 14px 0 0; text-box: trim-both cap alphabetic">Auditing 200 dashboards at 120K MAU: what got used, what got screenshotted, what got deleted.</p>
+        <span style="display: inline-block; margin-top: 14px; font-weight: 600; color: var(--color-accent-700)">Add the link →</span>
+      </a>
+      <a href="#writing" data-cta="writing: significance reports" style="display: block; text-decoration: none; color: inherit; padding: calc(1.25 * 28px) clamp(20px, 3vw, 28px); border-radius: calc(2 * var(--radius-lg)); background: var(--color-surface); transition: transform 160ms ease, box-shadow 160ms ease" style-hover="transform: translateY(-3px); box-shadow: var(--shadow-md)">
+        <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 14px">Template · draft</span>
+        <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; line-height: 28px; margin: 0; text-box: trim-both cap alphabetic">A significance report a CFO will read</h3>
+        <p style="font-size: 15px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 14px 0 0; text-box: trim-both cap alphabetic">One page, one decision, the confidence interval in plain English. The format I now reuse everywhere.</p>
+        <span style="display: inline-block; margin-top: 14px; font-weight: 600; color: var(--color-accent-700)">Add the link →</span>
+      </a>
+    </div>
+  </section>
+  </sc-if>
+
+  <section style="padding: calc(0.5 * 28px) 0 calc(3 * 28px)">
+    <figure style="margin: 0">
+      <blockquote style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(24px, 2.6vw, 32px); line-height: calc(1.5 * 28px); max-width: 34ch; margin: 0; text-indent: -0.559em; text-box: trim-both cap alphabetic">“He turned up asking who owned the number. Six weeks later the weekly review had stopped arguing about it.”</blockquote>
+      <figcaption style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 70%, transparent); margin: calc(2 * 28px - 1cap) 0 0; text-box: trim-both cap alphabetic">Replace with a real quote: analytics lead, UK ecommerce client</figcaption>
+    </figure>
+  </section>
+
+  <section id="contact" style="padding: 0 0 calc(2 * 28px)">
+    <div style="background: var(--color-accent-2-100); border-radius: calc(2 * var(--radius-lg)); padding: calc(2 * 28px) clamp(24px, 4vw, 64px)">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(26px, 3vw, 38px); line-height: calc(1.5 * 28px); margin: 0; text-box: trim-both cap alphabetic">Got a data product that isn't landing?</h2>
+      <p style="font-size: 15.5px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: calc(28px - 1cap) 0 0; max-width: 58ch; text-box: trim-both cap alphabetic">Send me the messy version, the dashboard nobody opens, the metric three teams define differently, the roadmap that stalled. I'll tell you what I'd look at first, whether or not we end up working together.</p>
+      <div style="display: flex; gap: var(--space-3); flex-wrap: wrap; margin-top: 28px">
+        <a class="btn btn-primary" href="mailto:vikram.bhadoria1995@gmail.com?subject=Your%20portfolio" data-cta="contact: email me">Email me</a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/vikram-singh-bhadoria-17a15912a/" target="_blank" rel="noopener noreferrer" data-cta="contact: linkedin">Connect on LinkedIn</a>
+        <a class="btn btn-ghost" href="uploads/Vikram PM-1.pdf" download="Vikram-Bhadoria-CV.pdf" data-cta="contact: download cv">Download the CV</a>
+      </div>
+      <p style="font-size: 13px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 70%, transparent); margin: 14px 0 0">vikram.bhadoria1995@gmail.com · +91 70006 18440 · Gurugram, India</p>
+    </div>
+  </section>
+
+  <footer style="padding: calc(1.5 * 28px) 0 calc(2.5 * 28px); font-size: 13px; line-height: 28px; color: color-mix(in srgb, var(--color-text) 70%, transparent); display: flex; flex-wrap: wrap; gap: 14px 28px; justify-content: space-between">
+    <span>© 2026 Vikram Bhadoria · Client work shown with names withheld where required.</span>
+    <span><a href="#work" data-cta="footer: back to work">Work</a> · <a href="mailto:vikram.bhadoria1995@gmail.com" data-cta="footer: email">Email</a> · <a href="https://www.linkedin.com/in/vikram-singh-bhadoria-17a15912a/" target="_blank" rel="noopener noreferrer" data-cta="footer: linkedin">LinkedIn</a></span>
+  </footer>
+
+</div>
+
+<sc-if value="{{ adminMode }}" hint-placeholder-val="{{ false }}">
+<div data-no-edit="true" style="position: fixed; left: clamp(12px, 3vw, 28px); bottom: clamp(12px, 3vw, 28px); z-index: 61; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; font-family: var(--font-body)">
+  <sc-if value="{{ panelOpen }}" hint-placeholder-val="{{ false }}">
+  <div style="width: min(300px, calc(100vw - 32px)); background: var(--color-neutral-100); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); padding: 18px 20px">
+  <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 12px">Admin · {{ editLabel }}</p>
+  <p style="font-size: 14px; line-height: 20px; color: color-mix(in srgb, var(--color-text) 74%, transparent); margin: 0 0 14px">{{ editHint }}</p>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px">
+    <button type="button" class="btn btn-primary" onClick="{{ toggleEditing }}" data-cta-ignore="true" style="min-height: 34px; font-size: 13px">{{ editButton }}</button>
+    <button type="button" class="btn btn-secondary" onClick="{{ saveEdits }}" data-cta-ignore="true" style="min-height: 34px; font-size: 13px">Save</button>
+    <button type="button" class="btn btn-ghost" onClick="{{ publishEdits }}" data-cta-ignore="true" style="min-height: 34px; font-size: 13px">Publish file</button>
+  </div>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px">
+    <button type="button" class="btn btn-ghost" onClick="{{ resetEdits }}" data-cta-ignore="true" style="min-height: 30px; font-size: 13px">Discard all edits</button>
+    <button type="button" class="btn btn-ghost" onClick="{{ previewVisitor }}" data-cta-ignore="true" style="min-height: 30px; font-size: 13px">Preview as visitor</button>
+    <button type="button" class="btn btn-ghost" onClick="{{ exitAdmin }}" data-cta-ignore="true" style="min-height: 30px; font-size: 13px">Sign out</button>
+  </div>
+  <p style="font-size: 13px; line-height: 18px; color: color-mix(in srgb, var(--color-text) 60%, transparent); margin: 12px 0 0">⌘/Ctrl + Shift + E hides this panel entirely.</p>
+  </div>
+  </sc-if>
+  <button type="button" class="btn btn-secondary" onClick="{{ togglePanel }}" data-cta-ignore="true" style="min-height: 34px; font-size: 13px; box-shadow: var(--shadow-md)">{{ panelToggleLabel }}</button>
+</div>
+</sc-if>
+
+<sc-if value="{{ showLogger }}" hint-placeholder-val="{{ false }}">
+<div data-no-edit="true" style="position: fixed; right: clamp(12px, 3vw, 28px); bottom: clamp(12px, 3vw, 28px); z-index: 60; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; font-family: var(--font-body)">
+  <sc-if value="{{ logOpen }}" hint-placeholder-val="{{ false }}">
+  <div style="width: min(320px, calc(100vw - 32px)); max-height: 46vh; overflow: auto; background: var(--color-neutral-100); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); padding: 18px 20px">
+    <p style="font-size: 13px; line-height: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin: 0 0 14px">CTA click log</p>
+    <sc-if value="{{ noClicks }}" hint-placeholder-val="{{ false }}">
+    <p style="font-size: 14px; line-height: 20px; color: color-mix(in srgb, var(--color-text) 70%, transparent); margin: 0">Nothing clicked yet. Every button, tile and link on the site counts itself here.</p>
+    </sc-if>
+    <sc-if value="{{ hasClicks }}" hint-placeholder-val="{{ true }}">
+    <div style="display: grid; gap: 8px">
+      <sc-for list="{{ entries }}" as="row" hint-placeholder-count="3">
+        <div style="display: flex; justify-content: space-between; gap: 12px; align-items: baseline; font-size: 14px; line-height: 20px">
+          <span style="color: color-mix(in srgb, var(--color-text) 80%, transparent)">{{ row.label }}</span>
+          <span style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); color: var(--color-accent-700)">{{ row.count }}</span>
+        </div>
+      </sc-for>
+    </div>
+    </sc-if>
+    <sc-if value="{{ hasClicks }}" hint-placeholder-val="{{ false }}">
+    <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--color-neutral-300)">
+      <span style="font-size: 14px; color: color-mix(in srgb, var(--color-text) 70%, transparent)">{{ total }} clicks this browser</span>
+      <button type="button" class="btn btn-ghost" onClick="{{ resetLog }}" style="min-height: 30px; font-size: 13px">Reset</button>
+    </div>
+    </sc-if>
+  </div>
+  </sc-if>
+  <button type="button" class="btn btn-primary" onClick="{{ toggleLog }}" data-cta-ignore="true" style="box-shadow: var(--shadow-md)">Click log · {{ total }}</button>
+</div>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showLogger&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Behaviour&quot;},&quot;showWriting&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sections&quot;},&quot;tileMode&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;mixed&quot;,&quot;rows&quot;],&quot;default&quot;:&quot;mixed&quot;,&quot;tsType&quot;:&quot;'mixed' | 'rows'&quot;,&quot;section&quot;:&quot;Sections&quot;}}">
+const KEY = 'vb-portfolio-cta-log';
+
+class Component extends DCLogic {
+  state = { counts: {}, logOpen: false, admin: false, editing: false, saved: false, panelOpen: false };
+
+  componentDidMount() {
+    const A = window.VBAdmin;
+    if (A) {
+      this.setState({ admin: A.panelVisible() });
+      this._onEditChange = () => {
+        const V = window.VBAdmin;
+        if (V) this.setState({ admin: V.panelVisible(), editing: V.editing(), dirty: V.dirty(), edits: V.count() });
+      };
+      document.addEventListener('vb-edit-change', this._onEditChange);
+      A.init(this._onEditChange);
+    }
+    try {
+      const raw = localStorage.getItem(KEY);
+      if (raw) this.setState({ counts: JSON.parse(raw) || {} });
+    } catch (e) {}
+    this._onClick = (e) => {
+      const el = e.target && e.target.closest ? e.target.closest('[data-cta]') : null;
+      if (!el) return;
+      const label = el.getAttribute('data-cta');
+      // External links must open in a real top-level tab: sites like LinkedIn send
+      // frame-ancestors 'self', so any in-frame navigation is refused by the browser.
+      const href = el.getAttribute('href') || '';
+      if (el.target === '_blank' && /^https?:/i.test(href)) {
+        e.preventDefault();
+        const w = window.open(href, '_blank', 'noopener,noreferrer');
+        if (!w) { try { window.top.location.href = href; } catch (err) { location.href = href; } }
+      }
+      this.setState((s) => {
+        const counts = { ...s.counts, [label]: (s.counts[label] || 0) + 1 };
+        try { localStorage.setItem(KEY, JSON.stringify(counts)); } catch (err) {}
+        return { counts };
+      });
+    };
+    document.addEventListener('click', this._onClick, true);
+  }
+
+  componentWillUnmount() {
+    if (this._onClick) document.removeEventListener('click', this._onClick, true);
+    if (this._onEditChange) document.removeEventListener('vb-edit-change', this._onEditChange);
+  }
+
+  componentDidUpdate() {
+    if (window.VBAdmin) window.VBAdmin.apply();
+  }
+
+  renderVals() {
+    const counts = this.state.counts || {};
+    const entries = Object.keys(counts)
+      .map((label) => ({ label, count: counts[label] }))
+      .sort((a, b) => b.count - a.count);
+    const total = entries.reduce((n, e) => n + e.count, 0);
+    return {
+      entries,
+      total,
+      hasClicks: entries.length > 0,
+      noClicks: entries.length === 0,
+      logOpen: this.state.logOpen,
+      adminMode: this.state.admin,
+      panelOpen: this.state.panelOpen,
+      panelToggleLabel: this.state.panelOpen ? 'Hide admin' : (this.state.editing ? 'Admin · editing' : 'Admin'),
+      togglePanel: () => this.setState((s) => ({ panelOpen: !s.panelOpen })),
+      editLabel: this.state.editing ? 'editing · ' + (this.state.dirty ? 'unsaved' : 'saved') : 'content locked',
+      editButton: this.state.editing ? 'Stop editing' : 'Edit content',
+      editHint: this.state.editing
+        ? 'Click any text and type. Save keeps it in this browser; Publish file downloads content.json to commit.'
+        : 'Visitors see none of this — no panel, no click log, no editable text. Turn on editing to change any text.',
+      toggleEditing: () => { window.VBAdmin && window.VBAdmin.toggleEditing(); },
+      saveEdits: () => { window.VBAdmin && window.VBAdmin.save(); },
+      publishEdits: () => { window.VBAdmin && window.VBAdmin.download(); },
+      resetEdits: () => { window.VBAdmin && window.VBAdmin.reset(); },
+      previewVisitor: () => { window.VBAdmin && window.VBAdmin.previewVisitor(); },
+      exitAdmin: () => { window.VBAdmin && window.VBAdmin.exitAdmin(); },
+      showLogger: this.state.admin && (this.props.showLogger ?? true),
+      showWriting: this.props.showWriting ?? true,
+      tilesMixed: (this.props.tileMode ?? 'mixed') === 'mixed',
+      tilesRows: (this.props.tileMode ?? 'mixed') === 'rows',
+      toggleLog: () => this.setState((s) => ({ logOpen: !s.logOpen })),
+      resetLog: () => {
+        try { localStorage.removeItem(KEY); } catch (e) {}
+        this.setState({ counts: {} });
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
