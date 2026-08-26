@@ -89,7 +89,12 @@
 /* END USAGE */
 
 (() => {
-  const STATE_FILE = '.image-slots.state.json';
+  // Not dot-prefixed: GitHub Pages does not serve dot-prefixed paths (bar
+  // .well-known), so a leading dot made the sidecar 404 and every stored
+  // image silently vanish. LEGACY_STATE_FILE is read as a fallback so state
+  // published under the old name still loads.
+  const STATE_FILE = 'image-slots.state.json';
+  const LEGACY_STATE_FILE = '.image-slots.state.json';
 
   // Unsplash terms require visible attribution wherever their photos
   // display, and every link back to unsplash.com must carry utm referral
@@ -167,10 +172,18 @@
   let loaded = false;
   let loadP = null;
 
+  function readState() {
+    return fetch(STATE_FILE, { cache: 'no-store' })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j) => (j != null ? j : fetch(LEGACY_STATE_FILE, { cache: 'no-store' })
+        .then((r) => (r.ok ? r.json() : null))
+        .catch(() => null)))
+      .catch(() => null);
+  }
+
   function load() {
     if (loadP) return loadP;
-    loadP = fetch(STATE_FILE)
-      .then((r) => (r.ok ? r.json() : null))
+    loadP = readState()
       .then((j) => {
         // Merge: sidecar loses to any in-memory change that raced ahead of
         // the fetch (drop or clear) so neither is clobbered by hydration.
