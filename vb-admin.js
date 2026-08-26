@@ -222,7 +222,8 @@
      read and write, and nothing else. */
   var TOKEN_KEY = 'vb-gh-token';
   var REPO_KEY = 'vb-gh-repo';
-  var IMG_STATE_FILE = '.image-slots.state.json';
+  var IMG_STATE_FILE = 'image-slots.state.json';
+  var IMG_STATE_LEGACY = '.image-slots.state.json';
   var status = { kind: 'idle', text: '' };
   var imgState = null;   // newest sidecar payload seen from <image-slot>
   var imgTimer = null;
@@ -407,7 +408,13 @@
     (document.head || document.documentElement).appendChild(st);
 
     fetch(IMG_STATE_FILE, { cache: 'no-store' })
-      .then(function (r) { return r.ok ? r.json() : {}; })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) {
+        if (j != null) return j;
+        return fetch(IMG_STATE_LEGACY, { cache: 'no-store' })
+          .then(function (r) { return r.ok ? r.json() : {}; })
+          .catch(function () { return {}; });
+      })
       .catch(function () { return {}; })
       .then(function (state) {
         state = state && typeof state === 'object' ? state : {};
